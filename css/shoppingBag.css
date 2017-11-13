@@ -1,0 +1,35 @@
+hr{
+	height: 5px;
+	width: 100%;
+	border-width: 0;
+	background-color: grey;
+	color: grey; /*For IE*/
+}
+
+.header{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.no-of-items{
+	text-align: right;
+	margin-right: 5px;
+}
+.product{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.user-options{
+	grid-column-start: 1;
+	grid-column-end : 3;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (min-width: 768px) {
+	.grid{
+		display: block;
+	}
+	.no-of-items{
+		text-align: left;
+	}
+}
