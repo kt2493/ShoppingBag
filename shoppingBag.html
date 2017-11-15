@@ -4,24 +4,24 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Your Orders</title>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="css/shoppingBag.css">
 </head>
 
 <body>
+    <!-- Page Header -->
     <div class="header">
         <p class="heading">YOUR SHOPPING BAG</p>
         <p class="no-of-items">3 ITEMS</p>
         <div>
-       		<p class="desk-prod-details">Size</p>
-        	<p class="desk-prod-details">Quantity</p>
-        	<p class="desk-prod-details">Price</p> 	
+            <p class="desk-prod-details">Size</p>
+            <p class="desk-prod-details">Quantity</p>
+            <p class="desk-prod-details">Price</p>
         </div>
-
-       
     </div>
-    <hr></hr>
+    <hr>
+    <!-- Product Info -->
     <div class="product">
         <div class="prod-image"><img src="images/T1.jpg" alt="Solid Green Cotton T-Shirt"></div>
         <div class="prod-descr">
@@ -29,9 +29,9 @@
             <p class="prod-details">Style # MS13KT2906</p>
             <p class="prod-details">Color : Blue</p>
             <p class="prod-details mob-prod-details"><span>Size :</span> S</p>
-            <p class="prod-details quant mob-prod-details">QTY: <span class="quantity">1</span></p>
-            <div class="discounted-price">
-                <p class="original-price"><span class="dollar-symbol">$</span>
+            <p class="prod-details mob-prod-details">QTY: <span class="quantity">1</span></p>
+            <div class="discounted-price  mob-prod-details">
+                <p class="original-price mob-prod-details"><span class="dollar-symbol">$</span>
                     <del>21.00</del>
                 </p>
                 <p class="offer-price"><span class="dollar-symbol">$</span>9.00</p>
@@ -43,7 +43,7 @@
             <p>SAVE FOR LATER</p>
         </div>
     </div>
-    <hr></hr>
+    <hr>
     <div class="product">
         <div class="prod-image"><img src="images/T2.jpg" alt="Solid Green Cotton T-Shirt"></div>
         <div class="prod-descr">
@@ -52,8 +52,8 @@
             <p class="prod-details">Color : Pink</p>
             <p class="prod-details mob-prod-details">Size : S</p>
             <p class="prod-details mob-prod-details">QTY: <span class="quantity">1</span></p>
-            <div class="discounted-price">
-                <p class="original-price"><span class="dollar-symbol">$</span>
+            <div class="discounted-price mob-prod-details">
+                <p class="original-price mob-prod-details"><span class="dollar-symbol">$</span>
                     <del>21.00</del>
                 </p>
                 <p class="offer-price"><span class="dollar-symbol">$</span>9.00</p>
@@ -65,7 +65,7 @@
             <p>SAVE FOR LATER</p>
         </div>
     </div>
-    <hr></hr>
+    <hr>
     <div class="product">
         <div class="prod-image"><img src="images/T3.jpg" alt="Solid Green Cotton T-Shirt"></div>
         <div class="prod-descr">
@@ -74,8 +74,8 @@
             <p class="prod-details">Color : Blue</p>
             <p class="prod-details mob-prod-details">Size : S</p>
             <p class="prod-details mob-prod-details">QTY: <span class="quantity">1</span></p>
-            <div class="discounted-price">
-                <p class="original-price"><span class="dollar-symbol">$</span>
+            <div class="discounted-price mob-prod-details">
+                <p class="original-price mob-prod-details"><span class="dollar-symbol">$</span>
                     <del>21.00</del>
                 </p>
                 <p class="offer-price"><span class="dollar-symbol">$</span>9.00</p>
@@ -87,9 +87,9 @@
             <p>SAVE FOR LATER</p>
         </div>
     </div>
-    <hr></hr>
-    <!-- Promo Code -->
+    <hr>
     <div class="order-details">
+        <!-- Need Assistance.. Text -->
         <div class="assistance-text">
             <div>
                 <p>Need help</p>
@@ -109,6 +109,7 @@
             </div>
         </div>
         <div class="bill-details">
+            <!-- Promo Code -->
             <div class="promo-code">
                 <div>
                     <p>ENTER PROMOTION CODE</p>
@@ -117,21 +118,22 @@
                 <input type="text" name="promoCode" value="" class="input-promocode">
                 <button class="promo-apply-btn">APPLY</button>
             </div>
-            <hr></hr>
+            <hr>
             <div class="order-bill">
+                <!-- Charge Info -->
                 <div class="charge-details">
-                    <div class="demo">
+                    <div class="charge-info">
                         <p>SUBTOTAL</p>
                         <p class="amount">$37.00</p>
                     </div>
-                    <div class="demo">
+                    <div class="charge-info">
                         <p class="shipping-charges">
                             <span>ESTIMATED SHIPPING*</span>
                             <span class="condition-text">You spent $50, so you qualify for free shipping*</span>
                         </p>
                         <p class="amount">FREE</p>
                     </div>
-                    <div class="demo">
+                    <div class="charge-info">
                         <p class="shipping-charges">
                             <span>PROMOTION CODE</span>
                             <span>JF10 APPLIED</span>
@@ -139,7 +141,7 @@
                         <p class="amount">-$7.00</p>
                     </div>
                     <hr>
-                    <div class="demo">
+                    <div class="charge-info">
                         <p class="shipping-charges">
                             <span>ESTIMATED TOTAL</span>
                             <span class="condition-text">Tax Will be applied during checkout</span>
@@ -152,7 +154,10 @@
                 <button id="checkout">CHECKOUT</button>
             </div>
             <div class="shop-more">CONTINUE SHOPPING</div>
-            <div class="secure-checkout"><p>Secure checkout.</p><p>Shopping is always safe &amp; secure.</p>  <img src="images/lock.jpg" alt="secure icon">
+            <div class="secure-checkout">
+                <p>Secure checkout.</p>
+                <p>Shopping is always safe &amp; secure.</p>
+                <p class="lock-img"><img src="images/lock.jpg" alt="secure icon"></p>
             </div>
             <div class="sign-in">
                 <hr>

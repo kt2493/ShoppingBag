@@ -2,11 +2,9 @@ body {
     font-family: Poppins;
     font-size: 14px;
 }
-
 p {
     margin: 0;
 }
-
 hr {
     height: 4px;
     width: 100%;
@@ -14,198 +12,149 @@ hr {
     background-color: lightgrey;
     color: lightgrey;
 }
-
 .header>p {
     display: inline;
 }
-
 .heading {
-    font-size: 14px;
+    font-size: 18px;
 }
-
 .no-of-items {
-    margin-right: 5px;
     float: right;
+    margin-right: 5px;
 }
-
 .prod-name {
     font-size: 12px;
 }
-
 .prod-image,
 .prod-descr {
+    float: left;
     margin: 2px;
-    float: left;
 }
-
 .user-options {
-    float: left;
-    width: 100%;
-    text-align: center;
-    margin-top: 7px;
     color: silver;
+    float: left;
+    margin-top: 7px;
+    text-align: center;
+    width: 100%;
 }
-
 .user-options>p {
     display: inline-block;
-    padding: 5px;
     margin-left: 2px;
+    padding: 5px;
 }
-
 .prod-details {
     color: lightgray;
 }
-
 .quantity {
     border: 1px solid lightgray;
     display: inline-block;
-    width: 30px;
     height: 20px;
     text-align: center;
+    width: 30px;
 }
-
 .dollar-symbol {
     font-size: 12px;
 }
-
 .price,
 .original-price,
 .discounted-price {
     font-size: 26px;
 }
-
-.quant {
-    margin: 3px;
-    color: gray;
-}
-
 .original-price {
     color: lightgray;
 }
-
 .discounted-price p {
     display: inline;
 }
-
-.desk-prod-details {
-    display: none;
-}
-
-.mob-prod-details {
-    display: block;
-}
-
-.promo-code {
-    padding: 10px;
-    text-align: center;
-    font-size: 14px;
-}
-
-.promo-apply-btn {
-    margin-left: 5px;
-    height: 29px;
-    background-color: white;
-    border: 1px solid silver;
-}
-
-.input-promocode {
-    border: 1px solid silver;
-    height: 25px;
-    width: 140px;
-    margin-top: 5px;
-}
-
-.order-bill {
-    margin-top: 15px;
-}
-
-.shipping-charges span {
-    display: inline-block;
-}
-
-.tot-amount {
-    font-size: 20px;
-}
-
-#checkout {
-    background-color: deepskyblue;
-    border: 1px solid lightskyblue;
-    width: 200px;
-    height: 50px;
-    /* float: none; */
-    display: table;
-    margin: 0 auto;
-}
-
-.shop-more {
-    margin-top: 15px;
-    text-align: center;
-    text-decoration: underline;
-}
-
-.secure-checkout {
-    margin-top: 15px;
-    text-align: center;
-}
-
+.desk-prod-details,
 .assistance-text {
     display: none;
 }
-
+.mob-prod-details,
 .sign-in {
     display: block;
 }
-
-.demo {
+.promo-code {
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+}
+.promo-apply-btn {
+    background-color: white;
+    border: 1px solid silver;
+    height: 29px;
+    margin-left: 5px;
+}
+.input-promocode {
+    border: 1px solid silver;
+    height: 25px;
+    margin-top: 5px;
+    width: 140px;
+}
+.shipping-charges span {
+    display: inline-block;
+}
+.tot-amount {
+    font-size: 20px;
+}
+#checkout {
+    background-color: deepskyblue;
+    border: 1px solid lightskyblue;
+    display: table;
+    height: 50px;
+    margin: 0 auto;
+    width: 200px;
+}
+.order-bill,
+.shop-more,
+.secure-checkout {
+    margin-top: 15px;
+}
+.shop-more {
+    text-align: center;
+    text-decoration: underline;
+}
+.secure-checkout,
+.sign-in {
+    text-align: center;
+}
+.charge-info {
     column-count: 2;
     padding: 15px;
 }
-
 .amount {
     text-align: right;
 }
-
 .condition-text {
-    font-size: 10px;
     color: lightgray;
+    font-size: 10px;
 }
-.sign-in{
-	text-align: center;
-}
+
 @media screen and (min-width: 768px) {
-    .header>p {
+    .header>p,
+    .shipping-charges span {
         display: block;
     }
     .no-of-items {
         float: left;
         width: 40%;
-
-    }
-    .product {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     .user-options {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        text-align: left;
         margin-top: 0;
+        text-align: left;
     }
-    
-    .order-details>div {
+    .order-details>div,
+    .mob-prod-details {
         display: inline-block;
     }
-    /* .mob-prod-details {
-        display: none;
-    } */
     .dollar-symbol {
         font-size: 10px;
     }
     .assistance-text {
         margin: 20px 15px;
-        width: 30%;
         vertical-align: top;
+        width: 30%;
     }
-
     .bill-details {
         margin-top: 20px;
         width: 60%;
@@ -217,11 +166,9 @@ hr {
         column-count: 2;
         text-align: left:;
     }
-
-    .shipping-charges span {
-        display: block;
+    .secure-checkout>p {
+        display: inline;
     }
-
     .secure-checkout {
         margin-top: 40px;
         text-align: right;
@@ -234,7 +181,10 @@ hr {
     }
     .desk-prod-details {
         display: inline;
-        /* text-align: center; */
-        margin:  0 6%;
+        margin: 0 6%;
+    }
+    .lock-img {
+        float: left;
+        margin-left: 55%;
     }
 }
