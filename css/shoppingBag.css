@@ -12,7 +12,12 @@ hr {
     background-color: lightgrey;
     color: lightgrey;
 }
-
+.display-block{
+	display: block;
+}
+.display-none{
+	display: none;
+}
 /* header */
 .header>p {
     display: inline;
@@ -51,7 +56,7 @@ hr {
     font-size: 26px;
 }
 
-.discounted-price p {
+.discounted-price p, .modal-specs {
     display: inline;
 }
 .quantity {
@@ -98,13 +103,19 @@ hr {
     display: inline-block;
 }
 
-#checkout {
+#checkout{
     background-color: deepskyblue;
     border: 1px solid lightskyblue;
     display: table;
     height: 50px;
     margin: 0 auto;
     width: 200px;
+}
+#modal-edit-button{
+	background-color: deepskyblue;
+    border: 1px solid lightskyblue;
+    height: 50px;
+    width: 100px;
 }
 .order-bill,
 .shop-more,
@@ -129,6 +140,55 @@ hr {
 .condition-text {
     color: lightgray;
     font-size: 10px;
+}
+
+.modal {
+    /* display: none; Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* height: 50%; */
+    column-count: 2;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 92px;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-details{
+	text-align: center;
+	margin-top: 12%;
+}
+.modal-details>p{
+	padding: 5px;
 }
 
 /* Media Query for Destop Version */
@@ -201,5 +261,12 @@ hr {
     .lock-img {
         float: left;
         margin-left: 55%;
+    }
+    .modal-content{
+    	width: 40%;
+    	height: 50%;
+    }
+    .close{
+    	right: 410px;
     }
 }

@@ -28,7 +28,8 @@
     <section>
     	<div class="product">
         	<div class="product-image">
-        		<img src="images/T1.jpg" alt="Solid Green Cotton T-Shirt"></div>
+        		<img src="images/T1.jpg" alt="Solid Green Cotton T-Shirt">
+        	</div>
         	<div class="product-description">
             	<p class="product-name">SOLID GREEN COTTON TSHIRT</p>
             	<p class="product-details">Style # MS13KT2906</p>
@@ -43,10 +44,10 @@
             	</div>
         	</div>
         	<div class="user-options">
-            	<a href="#">EDIT</a>
+            	<a href="#" class="edit">EDIT</a>
             	<a href="#">x REMOVE</a>
             	<a href="#">SAVE FOR LATER</a>
-        	</div>
+    		</div>
     	</div>
     	<hr>
     	<div class="product">
@@ -66,7 +67,7 @@
             	</div>
         	</div>
         	<div class="user-options">
-            	<a href="#">EDIT</a>
+            	<a href="#" class="edit">EDIT</a>
             	<a href="#">x REMOVE</a>
             	<a href="#">SAVE FOR LATER</a>
         	</div>
@@ -74,7 +75,8 @@
     	<hr>
     	<div class="product">
         	<div class="product-image">
-        		<img src="images/T3.jpg" alt="Solid Green Cotton T-Shirt"></div>
+        		<img src="images/T3.jpg" alt="Solid Green Cotton T-Shirt">
+        	</div>
         	<div class="product-description">
             	<p class="product-name">SOLID GREEN COTTON TSHIRT</p>
             	<p class="product-details">Style # MS13KT2906</p>
@@ -82,19 +84,56 @@
             	<p class="product-details product-specs"><span>Size :</span> S</p>
             	<p class="product-details product-specs">QTY: <span class="quantity">1</span></p>
             	<div class="discounted-price  product-specs">
-                <p class="original-price product-specs"><span class="dollar-symbol">$</span>
+                <p class="original-price product-specs">
+                	<span class="dollar-symbol">$</span>
                     <del>15.00</del>
                 </p>
-                <p class="offer-price"><span class="dollar-symbol">$</span>10.00</p>
+                <p class="offer-price">
+                	<span class="dollar-symbol">$</span>10.00
+                </p>
             	</div>
         	</div>
         	<div class="user-options">
-            	<a href="#">EDIT</a>
+            	<a href="#" class="edit">EDIT</a>
             	<a href="#">x REMOVE</a>
             	<a href="#">SAVE FOR LATER</a>
         	</div>
     	</div>
     	<hr>
+    	<!-- Modal Layout -->
+    	<div id="productModal" class="modal display-none">
+            	<div class="modal-content">
+    				<div class="modal-details">
+    					<p>Levis Jeans</p>
+    					<p>$21.00</p>
+    					<p>Color Options</p>
+    					<p>Pink Blue</p>
+    					<p class="modal-specs">
+    						<select name="Size">
+    							<option value="XS">XS</option>
+    							<option value="S">S</option>
+    							<option value="M">M</option>
+    							<option value="L">L</option>
+    							<option value="XL">XL</option>
+  							</select>
+    					</p>
+    					<p class="modal-specs">QTY
+    						<select name="Quantity">
+    							<option value="1">1</option>
+    							<option value="2">2</option>
+    							<option value="3">3</option>
+    							<option value="4">4</option>
+  							</select>
+    					</p>
+    					<p><button id="modal-edit-button">EDIT</button></p>
+    					<p><a href="#">See Product Details</a></p>	
+    				</div>
+					<div class="modal-details">
+						<img src="images/P1.jpg" alt="Product Preview">
+					</div>
+    				<p class="close">&times;</p>
+  				</div>
+        	</div>
     </section>
     
     <section>
@@ -176,7 +215,6 @@
         	</div>
     	</div>
     </section>
-    
+    <script src="js/shoppingBag.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
-
 </html>

@@ -17,4 +17,30 @@
 		}
 	}
 
+
+
+	var edit = document.getElementsByClassName("edit");
+	var modal = document.getElementById("productModal");
+	var closeModal = document.getElementsByClassName("close")[0];
+	
+	for(var i=0 ; i<edit.length;i++){
+		edit[i].addEventListener("click", function(){
+			// console.log("Clicked");
+			modal.classList.remove("display-none");
+			modal.classList.add("display-block");
+		});
+	}
+	
+	closeModal.addEventListener("click",function(){
+		modal.classList.remove("display-block");
+		modal.classList.add("display-none");
+	});
+
+	window.addEventListener("click", function(){
+		if (event.target == modal) {
+			modal.classList.remove("display-block");
+        	modal.classList.add("display-none");
+    	}
+	});
+
 })();
