@@ -12,6 +12,8 @@ hr {
     background-color: lightgrey;
     color: lightgrey;
 }
+
+/* header */
 .header>p {
     display: inline;
 }
@@ -22,28 +24,35 @@ hr {
     float: right;
     margin-right: 5px;
 }
-.prod-name {
-    font-size: 12px;
+.isDesktop,
+.assistance-text {
+    display: none;
 }
-.prod-image,
-.prod-descr {
+
+/* Section Product Info */
+
+.product-image,
+.product-description {
     float: left;
     margin: 2px;
 }
-.user-options {
-    color: silver;
-    float: left;
-    margin-top: 7px;
-    text-align: center;
-    width: 100%;
+.product-name, .dollar-symbol {
+    font-size: 12px;
 }
-.user-options>p {
-    display: inline-block;
-    margin-left: 2px;
-    padding: 5px;
-}
-.prod-details {
+.product-details, .original-price {
     color: lightgray;
+}
+.product-specs,
+.sign-in {
+    display: block;
+}
+.original-price,
+.discounted-price {
+    font-size: 26px;
+}
+
+.discounted-price p {
+    display: inline;
 }
 .quantity {
     border: 1px solid lightgray;
@@ -52,28 +61,22 @@ hr {
     text-align: center;
     width: 30px;
 }
-.dollar-symbol {
-    font-size: 12px;
+.user-options {
+    color: silver;
+    float: left;
+    margin-top: 7px;
+    text-align: center;
+    width: 100%;
 }
-.price,
-.original-price,
-.discounted-price {
-    font-size: 26px;
+.user-options>a {
+	text-decoration: none;
+	color: lightgray;
+    display: inline-block;
+    margin-left: 2px;
+    padding: 5px;
 }
-.original-price {
-    color: lightgray;
-}
-.discounted-price p {
-    display: inline;
-}
-.desk-prod-details,
-.assistance-text {
-    display: none;
-}
-.mob-prod-details,
-.sign-in {
-    display: block;
-}
+
+/* Section Promo Code and Bill Details */
 .promo-code {
     font-size: 14px;
     padding: 10px;
@@ -94,9 +97,7 @@ hr {
 .shipping-charges span {
     display: inline-block;
 }
-.tot-amount {
-    font-size: 20px;
-}
+
 #checkout {
     background-color: deepskyblue;
     border: 1px solid lightskyblue;
@@ -130,7 +131,10 @@ hr {
     font-size: 10px;
 }
 
+/* Media Query for Destop Version */
 @media screen and (min-width: 768px) {
+    
+    /* Header */
     .header>p,
     .shipping-charges span {
         display: block;
@@ -139,18 +143,33 @@ hr {
         float: left;
         width: 40%;
     }
-    .user-options {
-        margin-top: 0;
-        text-align: left;
+    .isDesktop {
+        display: inline;
+        margin: 0 6%;
     }
-    .order-details>div,
-    .mob-prod-details {
+
+    /* Section Product Info */
+	 .order-details>div,
+    .product-specs {
         display: inline-block;
     }
-    .dollar-symbol {
+	.dollar-symbol {
         font-size: 10px;
     }
-    .assistance-text {
+	.user-options {
+        margin: 0 16%;
+        text-align: left;
+    }
+    .product-specs{
+    	padding: 20px;
+    }
+    .product-image,
+	.product-description {
+    	margin: 5px 30px;
+}
+
+    /* Section Promo Code and Bill Details */
+	.assistance-text {
         margin: 20px 15px;
         vertical-align: top;
         width: 30%;
@@ -178,10 +197,6 @@ hr {
     }
     #checkout {
         float: right;
-    }
-    .desk-prod-details {
-        display: inline;
-        margin: 0 6%;
     }
     .lock-img {
         float: left;
