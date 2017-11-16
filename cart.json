@@ -2,16 +2,17 @@
    "productsInCart":[  
       {  
          "p_id":"1",
-         "p_name":"cotton tshirt",
+         "p_name":"COTTON TSHIRT",
          "p_variation":"solid green",
-         "p_style":"ms13kt1906",
+         "p_style":"MS13KT1906",
+         "p_img" : "images/T1.jpg",
          "p_selected_color":{  
-            "name":"blue",
+            "name":"Blue",
             "hexcode":"#1169BD"
          },
          "p_selected_size":{  
             "name":"small",
-            "code":"s"
+            "code":"S"
          },
          "p_available_options":{  
             "colors":[  
@@ -31,19 +32,19 @@
             "sizes":[  
                {  
                   "name":"small",
-                  "code":"s"
+                  "code":"S"
                },
                {  
                   "name":"medium",
-                  "code":"m"
+                  "code":"M"
                },
                {  
                   "name":"large",
-                  "code":"l"
+                  "code":"L"
                },
                {  
                   "name":"extra large",
-                  "code":"xl"
+                  "code":"XL"
                }
             ]
          },
@@ -54,16 +55,17 @@
       },
       {  
          "p_id":"2",
-         "p_name":"print girls tee",
+         "p_name":"PRINT GIRLS TEE",
          "p_variation":"pink rainbow",
-         "p_style":"ms13kt1906",
+         "p_style":"MS13KT1906",
+         "p_img" : "images/T2.jpg",
          "p_selected_color":{  
-            "name":"pink",
+            "name":"Pink",
             "hexcode":"#F1DDEF"
          },
          "p_selected_size":{  
             "name":"small",
-            "code":"s"
+            "code":"S"
          },
          "p_available_options":{  
             "colors":[  
@@ -83,19 +85,19 @@
             "sizes":[  
                {  
                   "name":"small",
-                  "code":"s"
+                  "code":"S"
                },
                {  
                   "name":"medium",
-                  "code":"m"
+                  "code":"M"
                },
                {  
                   "name":"large",
-                  "code":"l"
+                  "code":"L"
                },
                {  
                   "name":"extra large",
-                  "code":"xl"
+                  "code":"XL"
                }
             ]
          },
@@ -106,16 +108,17 @@
       },
       {  
          "p_id":"3",
-         "p_name":"flower pattern shirt",
+         "p_name":"FLOWER PATTERN SHIRT",
          "p_variation":"blue",
-         "p_style":"ms13kt1906",
+         "p_style":"MS13KT1906",
+         "p_img" : "images/T3.jpg",
          "p_selected_color":{  
-            "name":"blue",
+            "name":"Blue",
             "hexcode":"#1169BD"
          },
          "p_selected_size":{  
             "name":"small",
-            "code":"s"
+            "code":"S"
          },
          "p_available_options":{  
             "colors":[  
@@ -135,19 +138,19 @@
             "sizes":[  
                {  
                   "name":"small",
-                  "code":"s"
+                  "code":"S"
                },
                {  
                   "name":"medium",
-                  "code":"m"
+                  "code":"M"
                },
                {  
                   "name":"large",
-                  "code":"l"
+                  "code":"L"
                },
                {  
                   "name":"extra large",
-                  "code":"xl"
+                  "code":"XL"
                }
             ]
          },
@@ -158,16 +161,17 @@
       },
       {  
          "p_id":"4",
-         "p_name":"check pattern tshirt",
+         "p_name":"CHECK PATTERNED SHIRT",
          "p_variation":"mens red",
-         "p_style":"ms13kt1906",
+         "p_style":"MS13KT1906",
+         "p_img" : "images/T4.jpg",
          "p_selected_color":{  
-            "name":"red",
+            "name":"Red",
             "hexcode":""
          },
          "p_selected_size":{  
             "name":"small",
-            "code":"s"
+            "code":"S"
          },
          "p_available_options":{  
             "colors":[  
@@ -187,19 +191,19 @@
             "sizes":[  
                {  
                   "name":"small",
-                  "code":"s"
+                  "code":"S"
                },
                {  
                   "name":"medium",
-                  "code":"m"
+                  "code":"M"
                },
                {  
                   "name":"large",
-                  "code":"l"
+                  "code":"L"
                },
                {  
                   "name":"extra large",
-                  "code":"xl"
+                  "code":"XL"
                }
             ]
          },

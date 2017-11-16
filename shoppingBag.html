@@ -14,7 +14,7 @@
     <header>
     	<div class="header">
         	<p class="heading">YOUR SHOPPING BAG</p>
-        	<p class="no-of-items">3 ITEMS</p>
+        	<p class="no-of-items"></p>
         	<div>
             	<p class="isDesktop">Size</p>
             	<p class="isDesktop">Quantity</p>
@@ -25,8 +25,8 @@
     </header>
     
     <!-- Product Info -->
-    <section>
-    	<div class="product">
+    <section id="cart-items">
+    	<!-- <div class="product">
         	<div class="product-image">
         		<img src="images/T1.jpg" alt="Solid Green Cotton T-Shirt">
         	</div>
@@ -99,41 +99,7 @@
             	<a href="#">SAVE FOR LATER</a>
         	</div>
     	</div>
-    	<hr>
-    	<!-- Modal Layout -->
-    	<div id="productModal" class="modal display-none">
-            	<div class="modal-content">
-    				<div class="modal-details">
-    					<p>Levis Jeans</p>
-    					<p>$21.00</p>
-    					<p>Color Options</p>
-    					<p>Pink Blue</p>
-    					<p class="modal-specs">
-    						<select name="Size">
-    							<option value="XS">XS</option>
-    							<option value="S">S</option>
-    							<option value="M">M</option>
-    							<option value="L">L</option>
-    							<option value="XL">XL</option>
-  							</select>
-    					</p>
-    					<p class="modal-specs">QTY
-    						<select name="Quantity">
-    							<option value="1">1</option>
-    							<option value="2">2</option>
-    							<option value="3">3</option>
-    							<option value="4">4</option>
-  							</select>
-    					</p>
-    					<p><button id="modal-edit-button">EDIT</button></p>
-    					<p><a href="#">See Product Details</a></p>	
-    				</div>
-					<div class="modal-details">
-						<img src="images/P1.jpg" alt="Product Preview">
-					</div>
-    				<p class="close">&times;</p>
-  				</div>
-        	</div>
+    	<hr> -->
     </section>
     
     <section>
@@ -173,21 +139,21 @@
                 	<div class="charge-details">
                     	<div class="charge-info">
                         	<p>SUBTOTAL</p>
-                        	<p class="amount">$37.00</p>
+                        	<p class="amount" id="subtotal"></p>
                     	</div>
                     	<div class="charge-info">
                         	<p class="shipping-charges">
                             	<span>ESTIMATED SHIPPING*</span>
                             	<span class="condition-text">You spent $50, so you qualify for free shipping*</span>
                         	</p>
-                        	<p class="amount">FREE</p>
+                        	<p class="amount" id="shipping-charge"></p>
                     	</div>
                     	<div class="charge-info">
                         	<p class="shipping-charges">
                             	<span>PROMOTION CODE</span>
                             	<span>JF10 APPLIED</span>
                         	</p>
-                        	<p class="amount">-$7.00</p>
+                        	<p class="amount" id="promo-discount"></p>
                     	</div>
                     	<hr>
                     	<div class="charge-info">
@@ -195,7 +161,7 @@
                             	<span>ESTIMATED TOTAL</span>
                             	<span class="condition-text">Tax Will be applied during checkout</span>
                         	</p>
-                        	<p class="amount">$30.00</p>
+                        	<p class="total-amount" id="total"></p>
                     	</div>
                 	</div>
             	</div>
@@ -215,8 +181,9 @@
         	</div>
     	</div>
     </section>
-    <div id="test">Text Here</div>
-    <script src="js/global.js" type="text/javascript"></script>
+    <!-- Modal Layout -->
+    <div id="productModal" class="modal display-none"></div>
+    <script src="js/utility.js" type="text/javascript"></script>
     <script src="js/shoppingBag.js" type="text/javascript"></script>
 </body>
 </html>

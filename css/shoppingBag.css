@@ -81,6 +81,13 @@ hr {
     padding: 5px;
 }
 
+.color-options{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #A3D2A1;
+	margin: 0 5px;
+}
 /* Section Promo Code and Bill Details */
 .promo-code {
     font-size: 14px;
@@ -134,7 +141,7 @@ hr {
     column-count: 2;
     padding: 15px;
 }
-.amount {
+.amount, .total-amount {
     text-align: right;
 }
 .condition-text {
@@ -186,9 +193,10 @@ hr {
 .modal-details{
 	text-align: center;
 	margin-top: 12%;
+	
 }
 .modal-details>p{
-	padding: 5px;
+	padding: 8px;
 }
 
 /* Media Query for Destop Version */
@@ -268,5 +276,12 @@ hr {
     }
     .close{
     	right: 410px;
+    }
+    .modal-details{
+        width: 270px;
+        height: 100%;
+    }
+    .modal-details>p{
+        padding: 15px;
     }
 }

@@ -1,4 +1,4 @@
-var app = {
+var Utility = {
 	required_data: "",
 	initRequest: function() {
         var xhr;
@@ -9,10 +9,9 @@ var app = {
         }
         return xhr;
     },
-    ajax_request: function(type, url, data, callback) {
+    ajaxRequest: function(type, data, callback) {
         var xhr = (typeof xhr === 'undefined') ? this.initRequest() : xhr;
-        var url = "http://localhost:3000/" + url;
-        console.log(url)
+        var url = "http://localhost:3000/productsInCart";
         xhr.open(type, url, true);
         xhr.setRequestHeader("Content-Type", 'application/json');
         data = JSON.stringify(data);
@@ -28,9 +27,9 @@ var app = {
         })(xhr, callback);
 
     },
-    getObject: function(url, Func) {
+    getObject: function(Func) {
 
-        this.ajax_request("GET", url, null, function(xhr) {
+        this.ajaxRequest("GET", null, function(xhr) {
             if (xhr == 404 || xhr == "error") {
                 Func(null);
             } else {
@@ -40,28 +39,18 @@ var app = {
 
         });
     },
-    // getObjectById: function(url, id, Func) {
-    //     this.ajax_request("GET", url + "/" + id, null, function(xhr) {
-    //         if (xhr == 404 || xhr == "error") {
-    //             Func(null);
-    //         } else {
-    //             required_data = JSON.parse(xhr.responseText);
-    //             Func(required_data);
 
-    //         }
-    //     });
-    // },
-    // putObjectById: function(url, id, data, Func) {
-    //     this.ajax_request("PUT", url + "/" + id, data, function(xhr) {
-    //         if (xhr == 404 || xhr == "error") {
-    //             Func(null);
-    //         } else {
-    //             required_data = JSON.parse(xhr.responseText);
-    //             Func(required_data);
-    //         }
-    //     });
-    // },
-    /*Function to get Elements by their respective selector*/
+    putObjectById: function(url, data, Func) {
+        this.ajaxRequest("PUT", data, function(xhr) {
+            if (xhr == 404 || xhr == "error") {
+                Func(null);
+            } else {
+                required_data = JSON.parse(xhr.responseText);
+                Func(required_data);
+            }
+        });
+    },
+    
     getElement: function(selector) {
         var element;
         if ((selector.charAt(0)) == '#') {
