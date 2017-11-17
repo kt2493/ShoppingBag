@@ -12,103 +12,102 @@
 <body>
     <!-- Page Header -->
     <header>
-    	<div class="header">
-        	<p class="heading">YOUR SHOPPING BAG</p>
-        	<p class="no-of-items"></p>
-        	<div>
-            	<p class="isDesktop">Size</p>
-            	<p class="isDesktop">Quantity</p>
-            	<p class="isDesktop">Price</p>
-        	</div>
-   		 </div>
-    	<hr>
+        <div class="header">
+            <p class="heading">YOUR SHOPPING BAG</p>
+            <p class="no-of-items"></p>
+            <div>
+                <p class="isDesktop">Size</p>
+                <p class="isDesktop">Quantity</p>
+                <p class="isDesktop">Price</p>
+            </div>
+        </div>
+        <hr>
     </header>
-    
     <!-- Product Info -->
     <section id="cart-items"></section>
-    
     <section>
-    	<div class="order-details">
-        <!-- Need Assistance.. Text -->
-        	<div class="assistance-text">
-            	<div>
-                	<p>Need help</p>
-                	<p>or have questions?</p>
-            	</div>
-            	<div>
-                	<p>Call Customer Service at</p>
-                	<p><a href="tel:1-800-555-5555">1-800-555-5555</a></p>
-            	</div>
-            	<div>
-                	<p>Chat with one of</p>
-                	<p><a href="#">our stylists</a></p>
-            	</div>
-            	<div>
-                	<p><a href="#">See return</a></p>
-                	<p><a href="#">&amp; exchange policy</a></p>
-            	</div>
-        	</div>
-        	<div class="bill-details">
-            <!-- Promo Code -->
-            	<div class="promo-code">
-                	<div>
-                    	<p>ENTER PROMOTION CODE</p>
-                    	<p> OR GIFT CARD</p>
-                	</div>
-                	<input type="text" name="promoCode" value="" class="input-promocode">
-                	<button class="promo-apply-btn">APPLY</button>
-            	</div>
-            	<hr>
-            	<div class="order-bill">
-                <!-- Charge Info -->
-                	<div class="charge-details">
-                    	<div class="charge-info">
-                        	<p>SUBTOTAL</p>
-                        	<p class="amount" id="subtotal"></p>
-                    	</div>
-                    	<div class="charge-info">
-                        	<p class="shipping-charges">
-                            	<span>ESTIMATED SHIPPING*</span>
-                            	<span class="condition-text">If you spend $50, you qualify for free shipping*</span>
-                        	</p>
-                        	<p class="amount" id="shipping-charge"></p>
-                    	</div>
-                    	<div class="charge-info">
-                        	<p class="shipping-charges">
-                            	<span>PROMOTION CODE</span>
-                            	<span>JF10 APPLIED</span>
-                        	</p>
-                        	<p class="amount" id="promo-discount"></p>
-                    	</div>
-                    	<hr>
-                    	<div class="charge-info">
-                        	<p class="shipping-charges">
-                            	<span>ESTIMATED TOTAL</span>
-                            	<span class="condition-text">Tax Will be applied during checkout</span>
-                        	</p>
-                        	<p class="total-amount" id="total"></p>
-                    	</div>
-                	</div>
-            	</div>
-            	<div class="checkout-btn">
-                	<button id="checkout">CHECKOUT</button>
-            	</div>
-            	<div class="shop-more">CONTINUE SHOPPING</div>
-            	<div class="secure-checkout">
-                	<p>Secure checkout.</p>
-                	<p>Shopping is always safe &amp; secure.</p>
-                	<p class="lock-img"><img src="images/lock.jpg" alt="secure icon"></p>
-            	</div>
-            	<div class="sign-in">
-                	<hr>
-                	<a href="#">SIGN IN</a> to save your cart and have access to your items on mobile, tablet, and desktop.
-            	</div>
-        	</div>
-    	</div>
+        <div class="order-details">
+            <!-- Need Assistance.. Text -->
+            <div class="assistance-text">
+                <div>
+                    <p>Need help</p>
+                    <p>or have questions?</p>
+                </div>
+                <div>
+                    <p>Call Customer Service at</p>
+                    <p><a href="tel:1-800-555-5555">1-800-555-5555</a></p>
+                </div>
+                <div>
+                    <p>Chat with one of</p>
+                    <p><a href="#">our stylists</a></p>
+                </div>
+                <div>
+                    <p><a href="#">See return</a></p>
+                    <p><a href="#">&amp; exchange policy</a></p>
+                </div>
+            </div>
+            <div class="bill-details">
+                <!-- Promo Code -->
+                <div class="promo-code">
+                    <div>
+                        <p>ENTER PROMOTION CODE</p>
+                        <p> OR GIFT CARD</p>
+                    </div>
+                    <input type="text" name="promoCode" value="" class="input-promocode">
+                    <button class="promo-apply-btn">APPLY</button>
+                </div>
+                <hr>
+                <div class="order-bill">
+                    <!-- Charge Info -->
+                    <div class="charge-details">
+                        <div class="charge-info">
+                            <p>SUBTOTAL</p>
+                            <p class="amount" id="subtotal"></p>
+                        </div>
+                        <div class="charge-info">
+                            <p class="shipping-charges">
+                                <span>ESTIMATED SHIPPING*</span>
+                                <span class="condition-text">If you spend $50, you qualify for free shipping*</span>
+                            </p>
+                            <p class="amount" id="shipping-charge"></p>
+                        </div>
+                        <div class="charge-info">
+                            <p class="shipping-charges">
+                                <span>PROMOTION CODE</span>
+                                <span>JF10 APPLIED</span>
+                            </p>
+                            <p class="amount" id="promo-discount"></p>
+                        </div>
+                        <hr>
+                        <div class="charge-info">
+                            <p class="shipping-charges">
+                                <span>ESTIMATED TOTAL</span>
+                                <span class="condition-text">Tax Will be applied during checkout</span>
+                            </p>
+                            <p class="total-amount" id="total"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-btn">
+                    <button id="checkout">CHECKOUT</button>
+                </div>
+                <div class="shop-more">CONTINUE SHOPPING</div>
+                <div class="secure-checkout">
+                    <p>Secure checkout.</p>
+                    <p>Shopping is always safe &amp; secure.</p>
+                    <p class="lock-img"><img src="images/lock.jpg" alt="secure icon"></p>
+                </div>
+                <div class="sign-in">
+                    <hr>
+                    <a href="#">SIGN IN</a> to save your cart and have access to your items on mobile, tablet, and desktop.
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Modal Layout -->
     <div id="productModal" class="modal display-none"></div>
     <script src="js/utility.js" type="text/javascript"></script>
     <script src="js/shoppingBag.js" type="text/javascript"></script>
 </body>
+
 </html>
