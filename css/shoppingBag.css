@@ -15,27 +15,19 @@ hr {
     color: #d3d3d3;
 }
 
-.display-block,
-.product-specs,
-.sign-in {
+.display-block{
     display: block;
 }
 
-.display-none,
-.isDesktop,
-.assistance-text {
+.hide, .isDesktop {
     display: none;
 }
 
 
 /* header */
 
-.header>p {
+.inline {
     display: inline;
-}
-
-.heading {
-    font-size: 18px;
 }
 
 .no-of-items {
@@ -242,7 +234,7 @@ hr {
 @media screen and (min-width: 768px) {
 
     /* Header */
-    .header>p,
+    .header>p, .header>h3,
     .shipping-charges span {
         display: block;
     }
@@ -287,6 +279,9 @@ hr {
     }
     .assistance-text>div {
         padding: 10px;
+    }
+    .assistance-text>div>span, .assistance-text>div>a{
+        display: block;
     }
     .promo-code {
         column-count: 2;

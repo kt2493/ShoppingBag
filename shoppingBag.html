@@ -11,39 +11,36 @@
 
 <body>
     <!-- Page Header -->
-    <header>
-        <div class="header">
-            <p class="heading">YOUR SHOPPING BAG</p>
-            <p class="no-of-items"></p>
+    <header class="header">
+            <h3 class="inline">YOUR SHOPPING BAG</h3>
+            <p class="no-of-items" class="inline"></p>
             <div>
                 <p class="isDesktop">Size</p>
                 <p class="isDesktop">Quantity</p>
                 <p class="isDesktop">Price</p>
             </div>
-        </div>
         <hr>
     </header>
     <!-- Product Info -->
     <section id="cart-items"></section>
-    <section>
-        <div class="order-details">
+    <section class="order-details">
             <!-- Need Assistance.. Text -->
-            <div class="assistance-text">
+            <div class="assistance-text hide">
                 <div>
-                    <p>Need help</p>
-                    <p>or have questions?</p>
+                    <span>Need help</span>
+                    <span>or have questions?</span>
                 </div>
                 <div>
-                    <p>Call Customer Service at</p>
-                    <p><a href="tel:1-800-555-5555">1-800-555-5555</a></p>
+                    <span>Call Customer Service at</span>
+                    <a href="tel:1-800-555-5555">1-800-555-5555</a>
                 </div>
                 <div>
-                    <p>Chat with one of</p>
-                    <p><a href="#">our stylists</a></p>
+                    <span>Chat with one of</span>
+                    <a href="#">our stylists</a>
                 </div>
                 <div>
-                    <p><a href="#">See return</a></p>
-                    <p><a href="#">&amp; exchange policy</a></p>
+                    <a href="#">See return</a>
+                    <a href="#">&amp; exchange policy</a>
                 </div>
             </div>
             <div class="bill-details">
@@ -97,15 +94,14 @@
                     <p>Shopping is always safe &amp; secure.</p>
                     <p class="lock-img"><img src="images/lock.jpg" alt="secure icon"></p>
                 </div>
-                <div class="sign-in">
+                <div class="sign-in display-block">
                     <hr>
                     <a href="#">SIGN IN</a> to save your cart and have access to your items on mobile, tablet, and desktop.
                 </div>
             </div>
-        </div>
     </section>
     <!-- Modal Layout -->
-    <div id="productModal" class="modal display-none"></div>
+    <div id="productModal" class="modal hide"></div>
     <script src="js/utility.js" type="text/javascript"></script>
     <script src="js/shoppingBag.js" type="text/javascript"></script>
 </body>

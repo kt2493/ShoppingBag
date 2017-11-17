@@ -19,9 +19,9 @@
                 "<p class='product-name'>" + product.p_name + "</p>" +
                 "<p class='product-details'>Style # " + product.p_style + "</p>" +
                 "<p class='product-details'>Color : " + product.p_selected_color.name + "</p>" +
-                "<p class='product-details product-specs'><span>Size:</span>" + product.p_selected_size.code + "</p>" +
-                "<p class='product-details product-specs'>QTY: <span class='quantity'>" + product.p_quantity + "</span></p>" +
-                "<div class='discounted-price  product-specs'>" +
+                "<p class='product-details product-specs display-block'><span>Size:</span>" + product.p_selected_size.code + "</p>" +
+                "<p class='product-details product-specs display-block'>QTY: <span class='quantity'>" + product.p_quantity + "</span></p>" +
+                "<div class='discounted-price  product-specs display-block'>" +
                 "<p class='original-price product-specs'><span class='dollar-symbol'>" + product.c_currency +
                 "</span><del>" + product.p_originalprice + "</del></p>" +
                 "<p class='offer-price'><span class='dollar-symbol'>" + product.c_currency +
@@ -75,13 +75,13 @@
         window.addEventListener("click", function() {
             if (event.target == modal) {
                 modal.classList.remove("display-block");
-                modal.classList.add("display-none");
+                modal.classList.add("hide");
             }
         });
     }
 
     function editProductHandler() {
-        modal.classList.remove("display-none");
+        modal.classList.remove("hide");
         modal.classList.add("display-block");
         productData = event.currentTarget.data;
         pid = this.getAttribute("data-id");
@@ -121,7 +121,7 @@
         for (var i = 0; i < closeModal.length; i++) {
             closeModal[i].addEventListener("click", function() {
                 modal.classList.remove("display-block");
-                modal.classList.add("display-none");
+                modal.classList.add("hide");
             });
         }
     }
@@ -132,7 +132,7 @@
         productData = event.currentTarget.data;
         pid = event.currentTarget.pid;
         modal.classList.remove("display-block");
-        modal.classList.add("display-none");
+        modal.classList.add("hide");
 
         for (var i = 0; i < productData.length; i++) {
             if (productData[i].p_id == pid) {
