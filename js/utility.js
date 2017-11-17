@@ -1,6 +1,6 @@
 var Utility = {
-	required_data: "",
-	initRequest: function() {
+    requiredData: "",
+    initRequest: function() {
         var xhr;
         if (window.XMLHttpRequest) {
             xhr = new XMLHttpRequest();
@@ -33,24 +33,24 @@ var Utility = {
             if (xhr == 404 || xhr == "error") {
                 Func(null);
             } else {
-                required_data = JSON.parse(xhr.responseText);
-                Func(required_data);
+                requiredData = JSON.parse(xhr.responseText);
+                Func(requiredData);
             }
 
         });
     },
 
-    putObjectById: function(url, data, Func) {
+    putObject: function(data, Func) {
         this.ajaxRequest("PUT", data, function(xhr) {
             if (xhr == 404 || xhr == "error") {
                 Func(null);
             } else {
-                required_data = JSON.parse(xhr.responseText);
-                Func(required_data);
+                requiredData = JSON.parse(xhr.responseText);
+                Func(requiredData);
             }
         });
     },
-    
+
     getElement: function(selector) {
         var element;
         if ((selector.charAt(0)) == '#') {
