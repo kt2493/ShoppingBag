@@ -9,13 +9,15 @@ hr {
     height: 4px;
     width: 100%;
     border-width: 0;
-    background-color: lightgrey;
-    color: lightgrey;
+    background-color: #d3d3d3;
+    color: #d3d3d3;
 }
-.display-block{
+.display-block, .product-specs,
+.sign-in{
 	display: block;
 }
-.display-none{
+.display-none, .isDesktop,
+.assistance-text{
 	display: none;
 }
 /* header */
@@ -29,10 +31,6 @@ hr {
     float: right;
     margin-right: 5px;
 }
-.isDesktop,
-.assistance-text {
-    display: none;
-}
 
 /* Section Product Info */
 
@@ -45,12 +43,9 @@ hr {
     font-size: 12px;
 }
 .product-details, .original-price {
-    color: lightgray;
+    color: #d3d3d3;
 }
-.product-specs,
-.sign-in {
-    display: block;
-}
+
 .original-price,
 .discounted-price {
     font-size: 26px;
@@ -60,14 +55,14 @@ hr {
     display: inline;
 }
 .quantity {
-    border: 1px solid lightgray;
+    border: 1px solid #d3d3d3;
     display: inline-block;
     height: 20px;
     text-align: center;
     width: 30px;
 }
 .user-options {
-    color: silver;
+    color: #c0c0c0;
     float: left;
     margin-top: 7px;
     text-align: center;
@@ -75,7 +70,7 @@ hr {
 }
 .user-options>a {
 	text-decoration: none;
-	color: lightgray;
+	color: #d3d3d3;
     display: inline-block;
     margin-left: 2px;
     padding: 5px;
@@ -85,7 +80,7 @@ hr {
 	display: inline-block;
 	width: 20px;
 	height: 20px;
-	background-color: #A3D2A1;
+	background-color: #a3d2a1;
 	margin: 0 5px;
 }
 /* Section Promo Code and Bill Details */
@@ -95,13 +90,13 @@ hr {
     text-align: center;
 }
 .promo-apply-btn {
-    background-color: white;
-    border: 1px solid silver;
+    background-color: #ffffff;
+    border: 1px solid #c0c0c0;
     height: 29px;
     margin-left: 5px;
 }
 .input-promocode {
-    border: 1px solid silver;
+    border: 1px solid #c0c0c0;
     height: 25px;
     margin-top: 5px;
     width: 140px;
@@ -111,19 +106,14 @@ hr {
 }
 
 #checkout{
-    background-color: deepskyblue;
-    border: 1px solid lightskyblue;
+    background-color: #00bfff;
+    border: 1px solid #00bfff;
     display: table;
     height: 50px;
     margin: 0 auto;
     width: 200px;
 }
-#modal-edit-button{
-	background-color: deepskyblue;
-    border: 1px solid lightskyblue;
-    height: 50px;
-    width: 100px;
-}
+
 .order-bill,
 .shop-more,
 .secure-checkout {
@@ -145,22 +135,28 @@ hr {
     text-align: right;
 }
 .condition-text {
-    color: lightgray;
+    color: #d3d3d3;
     font-size: 10px;
 }
 
+/* Modal */
+#modal-edit-button{
+    background-color: #00bfff;
+    border: 1px solid #00bfff;
+    height: 50px;
+    width: 100px;
+}
 .modal {
-    /* display: none; Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
 }
 /* Modal Content */
 .modal-content {
@@ -186,7 +182,7 @@ hr {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #000000;
     text-decoration: none;
     cursor: pointer;
 }
